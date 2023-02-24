@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.awt.geom.RoundRectangle2D;
 import DreaamBack.DProcessing;
 import java.sql.*;
+import log.PluginsAPI;
+import log.Plugins.*;
 
 //创建主窗体
 public class main extends JFrame {
@@ -81,6 +83,32 @@ public class main extends JFrame {
         JButton StartGame = new JButton("启动游戏");
         StarGame.add(StartGame);
 
+        StartGame.setBackground(new Color(255,255,255));
+        StartGame.setForeground(new Color(0,0,0));
+
+        SystemMenu.setBackground(new Color(255,255,255));
+        SystemMenu.setForeground(new Color(0,0,0));
+
+        Setting_Menu.setBackground(new Color(255,255,255));
+        Setting_Menu.setForeground(new Color(0,0,0));
+
+        Plugin_Menu.setBackground(new Color(255,255,255));
+        Plugin_Menu.setForeground(new Color(0,0,0));
+
+        GameMenu.setBackground(new Color(255,255,255));
+        GameMenu.setForeground(new Color(0,0,0));
+
+        Version_Menu.setBackground(new Color(255,255,255));
+        Version_Menu.setForeground(new Color(0,0,0));
+
+        Api_Menu.setBackground(new Color(255,255,255));
+        Api_Menu.setForeground(new Color(0,0,0));
+
+        Mods_Menu.setBackground(new Color(255,255,255));
+        Mods_Menu.setForeground(new Color(0,0,0));
+
+        Menu.setForeground(new Color(0,0,0));
+        Menu.setBackground(new Color(255,255,255));
         Setting_Menu.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(final ActionEvent e) {
@@ -115,10 +143,21 @@ public class main extends JFrame {
 
                 Setting_FRame.add(Setting);
 
+                White.setBackground(new Color(255,255,255));
+                White.setForeground(new Color(0,0,0));
+
+                Back.setBackground(new Color(255,255,255));
+                Back.setForeground(new Color(0,0,0));
                 //深色主题切换
                 Back.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
+                        StartGame.setBackground(new Color(45,45,45));
+                        StartGame.setForeground(new Color(255,255,255));
+
+                        White.setBackground(new Color(45,45,45));
+                        White.setForeground(new Color(255,255,255));
+
                         Back.setBackground(new Color(45,45,45));
                         Back.setForeground(new Color(255,255,255));
 
@@ -145,6 +184,44 @@ public class main extends JFrame {
 
                         Menu.setForeground(new Color(255,255,255));
                         Menu.setBackground(new Color(45,45,45));
+
+                    }
+                });
+                White.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        StartGame.setBackground(new Color(255,255,255));
+                        StartGame.setForeground(new Color(0,0,0));
+
+                        White.setBackground(new Color(255,255,255));
+                        White.setForeground(new Color(0,0,0));
+
+                        Back.setBackground(new Color(255,255,255));
+                        Back.setForeground(new Color(0,0,0));
+
+                        SystemMenu.setBackground(new Color(255,255,255));
+                        SystemMenu.setForeground(new Color(0,0,0));
+
+                        Setting_Menu.setBackground(new Color(255,255,255));
+                        Setting_Menu.setForeground(new Color(0,0,0));
+
+                        Plugin_Menu.setBackground(new Color(255,255,255));
+                        Plugin_Menu.setForeground(new Color(0,0,0));
+
+                        GameMenu.setBackground(new Color(255,255,255));
+                        GameMenu.setForeground(new Color(0,0,0));
+
+                        Version_Menu.setBackground(new Color(255,255,255));
+                        Version_Menu.setForeground(new Color(0,0,0));
+
+                        Api_Menu.setBackground(new Color(255,255,255));
+                        Api_Menu.setForeground(new Color(0,0,0));
+
+                        Mods_Menu.setBackground(new Color(255,255,255));
+                        Mods_Menu.setForeground(new Color(0,0,0));
+
+                        Menu.setForeground(new Color(0,0,0));
+                        Menu.setBackground(new Color(255,255,255));
 
                     }
                 });
@@ -254,6 +331,8 @@ public class main extends JFrame {
     }
 
     public static void main(String[] args) {
+        Test.Test();
+        PluginsAPI.LogData("The launcher starts","Default","INFO");
         DProcessing.UserData();
         System.out.println("[DreamBackLauncher/INFO]:The launcher starts");
         main frame = new main();
