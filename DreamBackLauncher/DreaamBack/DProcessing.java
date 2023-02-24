@@ -2,7 +2,6 @@ package DreaamBack;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.OutputStream;
 
 public class DProcessing{
@@ -11,7 +10,7 @@ public class DProcessing{
     }
     public static void UserData(){
         String succeed = "[DreamBackLauncher/INFO]:The background started successfully\n";
-        File data = new File("log.txt");
+        File data = new File("log.log");
         byte[] udata = succeed.getBytes();
         OutputStream out = null;
         try{
@@ -28,7 +27,7 @@ public class DProcessing{
     }
     public static void Data(String data){
         String succeed = data+"\n";
-        File dataTxt = new File("log.txt");
+        File dataTxt = new File("log.log");
         byte[] udata = succeed.getBytes();
         OutputStream out = null;
         try{
