@@ -22,3 +22,7 @@
 ### 3.总结
 
   总之，非常感谢陆御等多位开发者对梦回社区的支持，希望梦回越做越好
+
+### 致谢名单
+* [@wind阿风](https://github.com/Buelie/DreamBackLauncher/edit/main/README.md#致谢名单)
+* [@陆御](https://github.com/Buelie/DreamBackLauncher/edit/main/README.md#致谢名单)
