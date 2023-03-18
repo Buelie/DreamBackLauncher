@@ -26,3 +26,7 @@
 ### 致谢名单
 * [@wind阿风](https://github.com/Buelie/DreamBackLauncher/edit/main/README.md#致谢名单)
 * [@陆御](https://github.com/Buelie/DreamBackLauncher/edit/main/README.md#致谢名单)
+
+# 如果您是开发者,以下内容可能帮助您:
+[插件开发文档]()<br>
+[KOOK开发文档](https://developer.kookapp.cn/)
